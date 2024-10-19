@@ -1,0 +1,49 @@
+/* header-footer.css */
+header {
+    background-color: #2e2e2e;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d4af37;
+}
+
+.logo img {
+    max-width: 100px; /* Устанавливаем максимальный размер логотипа */
+    height: auto;
+    display: block;
+}
+
+header .logo {
+    color: #f5c518;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header .logo:hover {
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f5c518;
+}
+
+footer {
+    background-color: #2e2e2e;
+    text-align: center;
+    padding: 20px;
+    color: #f5f5f5;
+}
+

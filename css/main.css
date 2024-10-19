@@ -1,0 +1,380 @@
+/* main.css */
+body {
+    background-color: #1a1a1a;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+
+/* Плашка */
+.top-banner {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b30000; /* Мягкий красный */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.9); /* Более яркий эффект свечения */
+}
+
+/* Кнопки соцсетей со своим цветом */
+.social-buttons {
+    margin-top: 10px;
+}
+.social-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 14px;
+    border-radius: 50px; /* Скругленные кнопки */
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Более яркий эффект свечения */
+}
+
+/* Оставляем прежний цвет для Telegram */
+.social-buttons a.telegram {
+    background-color: #0088cc; /* Цвет для Telegram */
+}
+
+/* Исправленный цвет для Instagram */
+.social-buttons a.instagram {
+    background-color: #d62976; /* Новый цвет кнопки для Instagram */
+    color: white; /* Оставляем белый текст */
+}
+
+/* Цвет для WhatsApp с исправлением видимости текста */
+.social-buttons a.whatsapp {
+    background-color: #25D366; /* Цвет для WhatsApp */
+    color: black; /* Изменение цвета текста для видимости */
+}
+
+/* Новый цвет для Email */
+.social-buttons a.email {
+    background-color: #0066cc; /* Новый синий цвет для Email */
+    color: white;
+}
+
+/* Эффект свечения при наведении */
+.social-buttons a:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.9); /* Яркий эффект свечения при наведении */
+    transform: scale(1.15); /* Увеличение при наведении */
+}
+
+
+
+
+
+
+
+
+
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #d4af37; /* Золотой цвет для заголовков */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #2e2e2e;
+    text-align: center;
+    padding: 20px;
+    color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 40px 10px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+footer {
+    background-color: #2e2e2e;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #f5f5f5;
+}
+
+.instructions {
+    background-color: #2e2e2e;
+    color: #f5f5f5;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 90%; /* Ширина секции 90% */
+}
+
+.instructions h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f5c518;
+    text-align: center;
+}
+
+.instructions-content {
+    display: block;
+}
+
+.instruction-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.instruction-item img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.instruction-item p {
+    font-size: 16px;
+    color: #f5f5f5;
+    line-height: 1.5;
+}
+
+/* genealogy.css */
+
+/* Общие стили для всех устройств */
+#tree {
+    max-width: 100%; /* Ограничиваем ширину до 100%, чтобы не было выхода за границы */
+    width: 100vw; /* Полная ширина экрана */
+    height: 85vh; /* Высота 85% от экрана */
+    background-color: #2e2e2e; /* Фон */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    border: 2px solid #d4af37; /* Обводка */
+    border-radius: 15px; /* Закругляем края */
+    box-sizing: border-box; /* Учитываем границы */
+    overflow: hidden; /* Убираем переполнение */
+}
+
+/* Для мобильных устройств (до 768px) */
+@media (max-width: 768px) {
+    #tree {
+        width: 100vw; /* Полная ширина на мобильных */
+        height: 100vh; /* Высота 70% экрана на мобильных */
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Для больших экранов (больше 768px) */
+@media (min-width: 769px) {
+    #tree {
+        width: 900vw; /* Почти полная ширина для больших экранов */
+        height: 85vh; /* Высота 85% экрана для больших экранов */
+        margin: 0 auto; /* Центрируем схему */
+        padding: 0;
+    }
+}
+
+
+
+.genealogy .section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #d4af37; /* Золотой цвет */
+    text-align: center; /* Центрирование заголовка */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%; /* Чтобы не касался краёв */
+}
+
+
+footer {
+    background-color: #2e2e2e;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #f5f5f5;
+    border-top: 2px solid #d4af37; /* Золотая линия вверху */
+}
+
+footer p {
+    margin: 0;
+    color: #f5f5f5;
+    font-size: 16px;
+}
+
+.instructions {
+    background-color: #2e2e2e;
+    color: #f5f5f5;
+    padding: 20px;
+    margin: 20px 0; /* Отступы сверху и снизу */
+    border-radius: 10px;
+    max-width: 800px; /* Ограничение ширины секции */
+    text-align: left; /* Выровнять текст влево */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для объёма */
+    margin-left: 25px; /* Отступ слева, чтобы секция была правее */
+    border: 2px solid #d4af37; /* Бордюр с отступами от краёв */
+}
+
+.instructions h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f5c518;
+    text-align: left; /* Заголовок выровнен влево */
+
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.bottom-nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+.bottom-nav img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+/* Когда активен элемент */
+.bottom-nav a.active {
+    color: #d4af37; /* Золотой цвет для активной кнопки */
+}
+
+/* genealogy.css */
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #f5f5f5;
+}
+
+.close-btn {
+    float: right;
+    font-size: 28px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #d4af37;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Плавное появление с движением сверху */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Применяем анимацию при показе модального окна */
+.modal-content {
+    animation: modalFadeIn 0.5s ease;
+}
+
+/* Анимация для кнопок в инструкции */
+.instructions-content .instruction-item img {
+    transition: transform 0.3s ease; /* Плавное увеличение кнопок при наведении */
+}
+
+.instructions-content .instruction-item img:hover {
+    transform: scale(1.1); /* Небольшое увеличение кнопки при наведении */
+}
+
+/* genealogy.css */
+
+/* Анимация для появления */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Анимация для закрытия */
+@keyframes modalFadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* Применение анимации для показа модального окна */
+.modal-content {
+    animation: modalFadeIn 0.5s ease;
+}
+
+/* Применение анимации для закрытия */
+.modal.fade-out .modal-content {
+    animation: modalFadeOut 0.5s ease;
+}
+
+
+

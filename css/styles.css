@@ -1,0 +1,383 @@
+/* Основные стили */
+body {
+    background-color: #1a1a1a; /* Темный фон */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #f5f5f5; /* Светлый текст */
+    overflow-x: hidden;
+}
+
+
+
+
+/* Анимация при наведении */
+.source-btn:hover {
+    background: linear-gradient(145deg, #b89128, #d4af37); /* Изменение направления градиента при наведении */
+    color: #ffffff; /* Текст меняется на белый при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Увеличение тени */
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    margin: 0;
+}
+
+header {
+    background-color: #2e2e2e;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #f5c518;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f5c518;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #f5c518;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #2e2e2e;
+    text-align: center;
+    padding: 20px;
+    color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 40px 10px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+header {
+    background-color: #2e2e2e; /* Тёмный фон для шапки */
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d4af37; /* Золотая линия */
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d4af37; /* Золотой логотип */
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #ffffff;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* Секции */
+.content, .genealogy, .additional-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #d4af37; /* Золотой заголовок */
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: #d4af37;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-content {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #f5f5f5;
+}
+
+.button {
+    background-color: #d4af37; /* Золотой */
+    color: #1a1a1a; /* Тёмный текст для контраста */
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1c8abd; /* Бордовый при наведении */
+    color: #ffffff;
+}
+
+
+/* Схема родословной */
+#tree {
+    width: 100%;
+    height: 600px;
+    background-color: #2e2e2e; /* Тёмный фон для родословной */
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Дополнительная информация */
+.additional-section {
+    background-color: #2e2e2e;
+    padding: 60px 20px;
+    margin-top: 40px;
+    border-top: 2px solid #d4af37;
+    text-align: center;
+}
+
+.additional-section .section-title {
+    font-size: 28px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.additional-section .section-content {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: justify;
+    color: #f5f5f5;
+}
+
+/* Анимация плавного появления */
+.section-title, .section-content, .button {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-content {
+        font-size: 16px;
+    }
+
+    #tree {
+        height: 400px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+}
+
+footer {
+    background-color: #2e2e2e;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #f5f5f5;
+}
+
+/* Анимация загрузки */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#loader {
+    border: 16px solid #2e2e2e;
+    border-top: 16px solid #d4af37;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Прячем загрузчик после загрузки */
+.loaded #loader-wrapper {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+}
+
+
+#tree {
+    width: 100%;
+    height: 600px;
+    background-color: #2e2e2e;
+    margin-top: 20px;
+    border-radius: 15px; /* Более мягкое закругление */
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.instructions {
+    background-color: #2e2e2e;
+    color: #f5f5f5;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 90%; /* Остаётся 90% на десктопе */
+}
+
+.instructions h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f5c518;
+    text-align: center;
+}
+
+.instructions-content {
+    display: block;
+}
+
+.instruction-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.instruction-item img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.instruction-item p {
+    font-size: 16px;
+    color: #f5f5f5;
+    line-height: 1.5;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .instructions {
+        padding: 10px;
+        max-width: 95%; /* Инструкция занимает 95% ширины экрана на телефоне */
+    }
+
+    .instructions h3 {
+        font-size: 20px; /* Уменьшаем размер заголовка на телефонах */
+    }
+
+    .instruction-item img {
+        width: 30px; /* Уменьшаем иконки для мобильных устройств */
+        margin-right: 10px; /* Уменьшаем отступы между иконкой и текстом */
+    }
+
+    .instruction-item p {
+        font-size: 14px; /* Уменьшаем текст на мобильных для экономии места */
+    }
+}
+
+/* Загрузочная иконка на телефонах */
+#loader {
+    width: 80px; /* Уменьшаем ширину иконки загрузки на мобильных */
+    height: 80px; /* Уменьшаем высоту иконки загрузки на мобильных */
+}
