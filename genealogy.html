@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Схема родословной</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/emblem.png" alt="Эмблема рода Ожырай">
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Секция схемы родословной -->
+    <section id="genealogy">
+        <h2 class="section-title">Схема родословной</h2>
+        <div id="tree"></div>
+    </section>
+
+    <!-- Всплывающее окно для инструкции по управлению схемой -->
+    <div id="instruction-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Инструкция по управлению схемой:</h3>
+            <div class="instructions-content">
+                <div class="instruction-item">
+                    <img src="images/focus_button.png" alt="Кнопка квадрата">
+                    <p><strong>Кнопка квадрата:</strong> Вернёт вид на всю схему, если вы её потеряли.</p>
+                </div>
+                <div class="instruction-item">
+                    <img src="images/zoom_in_button.png" alt="Кнопка плюса">
+                    <p><strong>Кнопка плюса:</strong> Увеличивает масштаб для детального просмотра.</p>
+                </div>
+                <div class="instruction-item">
+                    <img src="images/zoom_out_button.png" alt="Кнопка минуса">
+                    <p><strong>Кнопка минуса:</strong> Уменьшает масштаб для обзора больше узлов.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Родословная Ожырай. Все права защищены.</p>
+    </footer>
+
+    <script src="JS/familytree.js"></script>
+    <script src="JS/TreeJS.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
