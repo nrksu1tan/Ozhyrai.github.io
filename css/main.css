@@ -8,6 +8,48 @@ body {
 }
 
 
+
+
+
+
+.collapsible-content {
+    max-height: 70px; /* Высота, после которой контент будет обрезан */
+    overflow: hidden;
+    transition: max-height 0.5s ease; /* Плавный переход */
+    position: relative; /* Для позиционирования кнопки внутри */
+}
+
+/* Когда контент развернут */
+.collapsible-content.expanded {
+    max-height: 1000px; /* Достаточно большое значение для полного отображения */
+}
+
+/* Позиционирование кнопки внутри контента */
+.toggle-button {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    z-index: 10;
+    background: linear-gradient(145deg, #d4af37, #b89128); /* Золотистый градиент */
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Плавные переходы */
+}
+
+.toggle-button:hover {
+    background: linear-gradient(145deg, #b89128, #d4af37);
+    color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+
 /* Плашка */
 .top-banner {
     position: relative;
@@ -22,6 +64,8 @@ body {
     z-index: 1000;
     font-family: 'Arial', sans-serif;
     box-shadow: 0 0 30px rgba(255, 0, 0, 0.9); /* Более яркий эффект свечения */
+    box-sizing: border-box; /* Чтобы padding не влиял на размер */
+    max-width: 100vw; /* Убедись, что плашка не выходит за ширину экрана */
 }
 
 /* Кнопки соцсетей со своим цветом */

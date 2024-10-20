@@ -19,22 +19,21 @@
 }
 
 .big-button {
-    display: inline-block;
-    background-color: #d4af37; /* Золотой цвет кнопки */
-    color: #1a1a1a; /* Тёмный цвет текста */
-    padding: 20px 40px; /* Увеличенные отступы для размера кнопки */
-    font-size: 24px; /* Большой размер текста */
-    text-align: center;
-    border-radius: 30px; /* Закруглённые края */
-    font-weight: bold;
-    text-decoration: none; /* Убираем подчёркивание */
-    margin-bottom: 20px; /* Отступ снизу */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для объёма */
-    transition: background-color 0.3s ease;
+    display: block; /* Делаем кнопку блочным элементом */
+    width: 200px; /* Задаём фиксированную ширину кнопки, можно изменить под свои нужды */
+    margin: 20px auto; /* Центрируем с помощью auto и добавляем отступы сверху и снизу */
+    text-align: center; /* Центрируем текст внутри кнопки */
+    padding: 10px 20px; /* Добавляем отступы внутри кнопки */
+    background-color: #d4af37; /* Цвет фона */
+    color: #1a1a1a; /* Цвет текста */
+    font-weight: bold; /* Жирный шрифт */
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    border-radius: 30px; /* Округляем края кнопки */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для кнопки */
+    transition: background-color 0.3s ease; /* Плавная смена цвета при наведении */
 }
 
-/* Анимация при наведении */
 .big-button:hover {
-    background-color: #b89128; /* Изменение цвета при наведении */
-    color: #ffffff; /* Белый текст при наведении */
+    background-color: #b89128; /* Смена цвета при наведении */
+    color: #ffffff; /* Цвет текста при наведении */
 }
