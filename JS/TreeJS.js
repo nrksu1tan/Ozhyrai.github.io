@@ -106,7 +106,7 @@ FamilyTree.templates.tommy_female.node =
     },
 
     nodes: [
-        { id: 1, name: "Предок 1",lstname:"Fio proverka", gender: "male", img: "images/img1.jpg", about: "Описание 1" },
+        { id: 1, name: "Предок 1",lstname:"Fio proverka", gender: "male", img: "images/netphoto.jpg", about: "Описание 1" },
         { id: 2, fid: 1, name: "Сын 1", gender: "male", img: "images/img2.jpg", about: "Описание 2" },
         { id: 3, fid: 1, name: "Сын 2", gender: "male", img: "images/img3.jpg", about: "Описание 3" },
         { id: 4, fid: 2, name: "Внук 1", gender: "male", img: "images/img4.jpg", about: "Описание 4" },

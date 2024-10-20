@@ -7,6 +7,22 @@ window.addEventListener("load", function() {
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.toggle-button');
+
+    buttons.forEach(function(button) {
+        function toggleContent(event) {
+            event.preventDefault();
+            const content = button.parentElement;
+            content.classList.toggle('expanded');
+            button.textContent = content.classList.contains('expanded') ? 'Свернуть' : 'Читать дальше';
+        }
+
+        button.addEventListener('click', toggleContent);
+        button.addEventListener('touchstart', toggleContent);
+    });
+});
+
 
 
 
@@ -41,3 +57,4 @@ closeBtn.addEventListener('click', function() {
         modal.classList.remove('fade-out'); // Убираем класс, чтобы сбросить состояние
     }, 500); // Задержка для завершения анимации (0.5 секунды)
 });
+
