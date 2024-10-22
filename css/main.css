@@ -8,7 +8,11 @@ body {
 }
 
 
-
+.info{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
 
 
 
@@ -27,8 +31,8 @@ body {
 /* Позиционирование кнопки внутри контента */
 .toggle-button {
     position: absolute;
-    right: 10px;
-    bottom: 0px;
+    right: 500px;
+    bottom: 20px;
     z-index: 10;
     background: linear-gradient(145deg, #d4af37, #b89128); /* Золотистый градиент */
     color: #1a1a1a;
@@ -48,7 +52,26 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
+.basic{
+    position: relative;
+    display: block;
+}
 
+.oiu{
+    position: absolute;
+    top: 300px;
+    left: 0;
+    height: 100%;
+    background-repeat: repeat-y;
+
+}
+
+.oiu1{
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    height: 100%;
+}
 
 /* Плашка */
 .top-banner {
@@ -124,7 +147,7 @@ body {
 
 section {
     padding: 60px 20px;
-    max-width: 1200px;
+    max-width: 95%;
     margin: 0 auto;
     text-align: center;
 }
@@ -136,9 +159,10 @@ h2 {
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 2px;
+    
 }
 
 footer {
@@ -209,15 +233,14 @@ footer {
 /* Общие стили для всех устройств */
 #tree {
     max-width: 100%; /* Ограничиваем ширину до 100%, чтобы не было выхода за границы */
-    width: 100vw; /* Полная ширина экрана */
+    width: 100%; /* Полная ширина экрана */
     height: 85vh; /* Высота 85% от экрана */
     background-color: #2e2e2e; /* Фон */
     margin: 0; /* Убираем внешние отступы */
     padding: 0; /* Убираем внутренние отступы */
     border: 2px solid #d4af37; /* Обводка */
     border-radius: 15px; /* Закругляем края */
-    box-sizing: border-box; /* Учитываем границы */
-    overflow: hidden; /* Убираем переполнение */
+
 }
 
 /* Для мобильных устройств (до 768px) */
@@ -233,9 +256,9 @@ footer {
 /* Для больших экранов (больше 768px) */
 @media (min-width: 769px) {
     #tree {
-        width: 900vw; /* Почти полная ширина для больших экранов */
-        height: 85vh; /* Высота 85% экрана для больших экранов */
-        margin: 0 auto; /* Центрируем схему */
+        width: 100%; /* Полная ширина для больших экранов */
+        height: 100vh; /* Полная высота экрана */
+        margin: 0; /* Убираем отступы */
         padding: 0;
     }
 }
